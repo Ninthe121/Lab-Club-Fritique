@@ -1,0 +1,18 @@
+nav {
+    background-color: #F5F1DC;
+}
+
+body {
+    margin: 0;
+}
+.linksnav {
+    display: none;
+}
+
+.form {
+    border: 2.67px solid;
+    border-color: #780116;
+    border-radius: 45px;
+    
+}
+
