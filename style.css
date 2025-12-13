@@ -1,3 +1,75 @@
+.galada-regular {
+  font-family: "Galada", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.Brother-1816-Regular{
+  font-family: "brother-1816", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Brother-1816-Regular-Italic {
+  font-family: "brother-1816", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.Brother-1816-Bold {
+  font-family: "brother-1816", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Brother-1816-Bold-Italic{
+  font-family: "brother-1816", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.Brother-1816-Printed-Regular {
+  font-family: "brother-1816-printed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Brother-1816-Printed-Regular-Italic {
+  font-family: "brother-1816-printed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.Brother-1816-Printed-Bold {
+  font-family: "brother-1816-printed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Brother-1816-Printed-Bold-Italic{
+  font-family: "brother-1816-printed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+main,  
+.about,
+.events,
+.merch,
+.registreer {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h1,
+h2 {
+    font-family: "Galada", cursive;
+}
+
+p{
+    font-family: "brother-1816", sans-serif;
+}
 nav {
     background-color: #F5F1DC;
 }
@@ -18,6 +90,8 @@ nav {
     cursor: pointer;
 }
 
+
+
 body {
     margin: 0;
 }
@@ -29,6 +103,111 @@ body {
     border: 2.67px solid;
     border-color: #780116;
     border-radius: 45px;
-    
 }
 
+.button {
+  background-color:#780116;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 3em;
+}
+
+.button a{
+    font-family: "brother-1816", sans-serif;
+   text-decoration: none;
+   color: white;
+}
+
+.about{
+    background-color: #F5F1DC;
+
+
+}
+
+.merch{
+    background-color: #F5F1DC;
+
+}
+
+footer{
+  background-color: #F5F1DC;
+  border-radius: 7%;
+}
+
+.logofooter {
+  width: 10em;
+}
+
+#hamburger {
+  display: none;
+}
+
+/* hamburger */
+.hamburger {
+  position: absolute;
+  right: 2em;
+  top: 1.2em;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.hamburger span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #780116;
+  left: 0;
+  transition: 0.3s;
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 8px; }
+.hamburger span:nth-child(3) { top: 16px; }
+
+/* slideout */
+.slideout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F1DC;
+  transform: translateY(-120%);
+  transition: 0.4s ease;
+  padding-top: 6em;
+  z-index: 1000;
+}
+
+.slideout a {
+  display: block;
+  padding: 1em 2em;
+  font-family: "brother-1816", sans-serif;
+  text-decoration: none;
+  color: #780116;
+  font-size: 2em;
+  border-bottom: none;
+  text-align: right;
+}
+#hamburger:checked ~ .slideout {
+  transform: translateY(0);
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(1) {
+  opacity: 0;
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
