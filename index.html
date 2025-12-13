@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club Fritique</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/npg3wid.css">
 </head>
 <body>
     <nav>
-        <img class="logonav" src="Images/Logo vector.svg" alt="Logo">
-        <div class="hamburger">
-            <img src="Images/Hamburger streepje.svg" alt="bovenste streepje">
-            <img src="Images/Hamburger streepje.svg" alt="Middelste streepje">
-            <img src="Images/Hamburger streepje.svg" alt="Onderste streepje">
-        </div>
+      <input type="checkbox" id="hamburger">
 
-        <div class="linksnav">
-            <a href="#">Home</a>
-            <a href="#">Over</a>
-            <a href="#">Events</a>
-            <a href="#">Merch</a>
-            <a href="#">Login</a>
-            <a href="#">Registreer</a>
-        </div>
-    </nav>
+      <label for="hamburger" class="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+      </label>
+
+      <img class="logonav" src="Images/Logo vector.svg" alt="Logo">
+
+      <div class="slideout">
+         <a href="#">Home</a>
+         <a href="#">Over</a>
+         <a href="#">Events</a>
+         <a href="#" class="nav-button">Registreer</a>      </div>
+   </nav>
 
     <main>
         <div class="snacks">
@@ -44,7 +48,7 @@
         <div class="wij">
            <h2>Wij zijn Club Fritique</h2>
            <p>Wij zijn Club Fritique, een trotse Belgische club die de unieke frituurcultuur viert. Onze naam — een mix van Nederlands, Engels en Frans — weerspiegelt onze open blik én onze Belgische roots. Gedreven door passie en nieuwsgierigheid ontdekken we nieuwe frituursnacks, delen we onze ervaringen en geven we eerlijke, enthousiaste beoordelingen. We nodigen alle snackliefhebbers uit om samen te proeven, te leren en te genieten van alles wat deze traditie zo bijzonder maakt. Onze kernwaarden: passie, exploratie, kritisch genieten en trots.</p>
-           <img href="Images/Frituursnacks wij zijn Cf.svg" alt="Frituursnacks">
+           <img src="Images/Frituursnacks wij zijn Cf.svg" alt="Frituursnacks">
         </div>
         
         <div class="app">
@@ -92,20 +96,20 @@
 
           <div>
              <label for="Email">Email</label>
-             <input id="Email" type="text">
+             <input id="Email" type="email">
           </div>
 
           <div>
              <label for="Wachtwoord">Wachtwoord</label>
-             <input id="Wachtwoord" type="text">
+             <input id="Wachtwoord" type="password">
           </div>
 
           <div>
              <label for="Herhaal">Herhaal wachtwoord</label>
-             <input id="Herhaal" type="text">
+             <input id="Herhaal" type="password">
           </div>
 
-          <div class="btn-registreer">
+          <div class="button">
             <a href="#">Registreer</a>
           </div>
         </section>
@@ -113,12 +117,12 @@
 
     <footer>
         <div>
-            <img src="Images/Logo vector.svg" alt="logo">
+            <img class="logofooter" src="Images/Logo vector.svg" alt="logo">
             <br>
-            <a href="#"><img src="#" alt="Instagram"></a>
-            <a href="#"><img src="#" alt="Facebook"></a>
-            <a href="#"><img src="#" alt="Youtube"></a>
-            <a href="#"><img src="#" alt="Tiktok"></a>
+            <a href="#"><img src="Images/insta.svg" alt="Instagram"></a>
+            <a href="#"><img src="Images/face book.svg" alt="Facebook"></a>
+            <a href="#"><img src="Images/youtube.svg" alt="Youtube"></a>
+            <a href="#"><img src="Images/Tiktok.svg" alt="Tiktok"></a>
             <br>
             <p>ClubFritique@gmail.com</p>
         </div>
