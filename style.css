@@ -81,10 +81,24 @@ h2 {
   font-family: "Galada", cursive;
 }
 
+.h2rood {
+  color: #780116;
+  font-size: 2em;
+}
+.center{
+  text-align: center;
+}
+
 p {
   font-family: "brother-1816", sans-serif;
 }
 
+.snacks {
+  position: absolute;
+  top: 3;
+  right: 0;
+  width: 200px;             
+}
 /* De nav */
 
 nav {
@@ -181,6 +195,7 @@ nav {
   padding-top: 4em;
   padding-left: 4em;
   padding-left: 1.5em;
+  font-family: "brother-1816", sans-serif;
 }
 .button a {
   font-family: "brother-1816", sans-serif;
@@ -213,6 +228,7 @@ nav {
 /* sections*/
 main{
   padding-bottom: 1.8em;
+  padding-top: 2em;
 }
 
 .about,
@@ -234,14 +250,38 @@ main{
    background-color: #F5F1DC;
 }
 
+.evenementen article {
+  background-color: #102022;
+  gap: 3em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30%;
+  padding-bottom: 5em;
+}
+
+.evenementen article .info  {
+   text-align: left;
+   padding-left: 2.5em;
+   color: white;
+}
+
+
+
 .registreer {
   padding-bottom: 5em;
 }
+
 
 /*footer*/
 footer {
   background-color: #F5F1DC;
   border-radius: 10%;
+}
+
+footer a {
+  text-decoration: none; 
+  color: #780116;  
+  font-family: "brother-1816", sans-serif;      
 }
 
 .logofooter {
@@ -253,4 +293,55 @@ footer {
 .mail{
   text-align: center;
   color: #780116;
+}
+
+.Icon{
+  display: inline-block; 
+}
+
+.Icon img{
+  width: 40px;          
+  height: auto;
+}
+
+@media(min-width: 1000px) {
+  /*Voor weg*/
+  .hamburger {
+    display: none;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .slideout {
+    display: none;
+  }
+
+  /*erbij*/
+  .linksnav {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+
+   nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+
+  .linksnav a {
+    font-family: "brother-1816", sans-serif;
+    text-decoration: none;
+    color: #780116;
+  }
+   /* registreeer knop in nav*/
+  .linksnav .nav-button {
+    background-color: #780116;
+    color: white;
+    padding: 0.6em 1.5em;
+    border-radius: 25px;
+  }
 }
