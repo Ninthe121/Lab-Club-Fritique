@@ -64,11 +64,16 @@ body {
 
 main,
 .about,
-.events,
+.evenementen,
 .merch,
 .registreer {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+h1 {
+  line-height: 1;
+  font-size: 3em;
 }
 
 h1,
@@ -95,7 +100,7 @@ nav {
   display: none;
 }
 
-/* Het hamburger menu (geleerd bij een oefening van Joris) */
+/* Het hamburger menu */
 
 #hamburger {
   display: none;
@@ -124,7 +129,7 @@ nav {
 .hamburger span:nth-child(2) { top: 8px; }
 .hamburger span:nth-child(3) { top: 16px; }
 
-/* menu dat openschuift (overgenomen van Snapchat oefening bij Joris en dan aangepast)*/
+/* menu dat openschuift (Snapchat oefening bij Joris aangepast)*/
 
 .slideout {
   position: fixed;
@@ -173,40 +178,79 @@ nav {
 .form {
   border: 2.67px solid #780116;
   border-radius: 45px;
+  padding-top: 4em;
+  padding-left: 4em;
+  padding-left: 1.5em;
+}
+.button a {
+  font-family: "brother-1816", sans-serif;
+  text-decoration: none;
+  color: white; 
 }
 
 .button {
   background-color: #780116;
-  color: white;
-  text-decoration: none;
   text-align: center;
   padding: 12px 30px;
   border-radius: 25px;
-  display: inline-block;
-  margin-bottom: 3em;
+  display: block;
+  margin: 0 auto 1.7em auto;
+  width: 125px;
 }
 
-.button a {
-  font-family: "brother-1816", sans-serif;
-  text-decoration: none;
-  color: white;
+/* Merch button */
+.button-merch {
+  background-color: white;
+  border: 2px solid #780116; 
 }
+
+.button-merch a {
+  color: #780116;
+}
+
+
 
 /* sections*/
+main{
+  padding-bottom: 1.8em;
+}
+
+.about,
+.merch,
+.evenementen,
+.registreer
+{
+ padding-top: 2em;
+}
+
+.about,
+.merch,
+.evenementen{
+ padding-bottom: 2em;
+}
 
 .about,
 .merch {
-  background-color: #F5F1DC;
+   background-color: #F5F1DC;
+}
+
+.registreer {
+  padding-bottom: 5em;
 }
 
 /*footer*/
 footer {
   background-color: #F5F1DC;
-  border-radius: 7%;
+  border-radius: 10%;
 }
 
 .logofooter {
   width: 10em;
   padding-top: 2em;
   
+}
+
+.mail{
+  text-align: center;
+  color: #780116;
 }
